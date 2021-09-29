@@ -1,8 +1,8 @@
 import { Piece } from './Pieces/Piece';
 
 export class MateChecker {
-    private _whiteKingChecked: Boolean;
-    private _blackKingChecked: Boolean;
+    private _whiteKingChecked: boolean;
+    private _blackKingChecked: boolean;
     private _piecesCheckingKing: Array<Piece>;
 
     constructor() {
@@ -11,11 +11,11 @@ export class MateChecker {
         this._piecesCheckingKing = [];
     }
 
-    public get whiteKingChecked(): Boolean {
+    public get whiteKingChecked(): boolean {
         return this._whiteKingChecked;
     }
 
-    public get blackKingChecked(): Boolean {
+    public get blackKingChecked(): boolean {
         return this._blackKingChecked;
     }
 
@@ -27,11 +27,11 @@ export class MateChecker {
         return []; // TODO
     }
 
-    public isPlayerCheckmated(playerIsWhite: Boolean): Boolean {
+    public isPlayerCheckmated(playerIsWhite: boolean): boolean {
         return false; //TODO
     }
 
-    public isPlayerStalemated(playerIsWhite: Boolean): Boolean {
+    public isPlayerStalemated(playerIsWhite: boolean): boolean {
         return false; //TODO
     }
 }
